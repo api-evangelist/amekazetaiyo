@@ -1,23 +1,69 @@
 aid: amekazetaiyo
+
 name: Amekazetaiyo
-description: 'Amekazetaiyo is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://ame-kaze-taiyo.jp/wp-content/uploads/2022/04/ogp.jpg
+
+description: 'Amekazetaiyo (株式会社雨風太陽) is a Japanese company focused on connecting urban and rural areas, fostering "relationship population" through various services such as food distribution, local commerce platforms, and community impact projects. Their mission is to blend cities and countryside, creating mutual support and sustainable growth across Japan.'
+
 url: https://raw.githubusercontent.com/api-evangelist/amekazetaiyo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+- Japan
+- UrbanRural
+- Community
+- Services
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/amekazetaiyo-hosts.yml
+- type: Newsroom
+  url: https://ame-kaze-taiyo.jp/news/
+- type: DomainSecurity
+  url: security/amekazetaiyo-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/amekazetaiyo
+  url: https://ame-kaze-taiyo.jp
+
+- type: Contact
+  url: https://ame-kaze-taiyo.jp/contact
+- type: PrivacyPolicy
+  url: https://ame-kaze-taiyo.jp/privacy_policy
+- type: TermsOfService
+  url: https://ame-kaze-taiyo.jp/consumer_protection
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine-readable contract found at the provider's API hosts.
+  evidence:
+    - url: https://api.ame-kaze-taiyo.jp/openapi.json
+      status: failed
+  checked: 2026-09-24
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

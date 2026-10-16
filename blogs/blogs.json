@@ -1,0 +1,14 @@
+{
+  "repo": "amekazetaiyo",
+  "feeds": [
+    {
+      "source": "https://ame-kaze-taiyo.jp/news/feed/",
+      "feed_url": "https://ame-kaze-taiyo.jp/news/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "feed"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-10-10T13:15:00Z"
+}
